@@ -6,7 +6,7 @@
 
 	<title>Akshay Nair's Portfolio</title>
 
-	<link rel="stylesheet" href="./css/style.css" />
+	<link rel="stylesheet" href="./src/css/style.css" />
 	<link href="//fonts.googleapis.com/css?family=Raleway:100,400,500" rel="stylesheet" />
 </head>
 <body>
@@ -16,11 +16,12 @@
 
 	<!-- The header element -->
 	<header class="header">
+
 		<div class="header__wrap row">
 
 			<!-- Logo -->
 			<div class="header__logo">
-				<img class="header__logo__img" src="./img/lgo.png" alt="Akshay Nair's Portfolio" />
+				<img class="header__logo__img" src="./src/img/lgo.png" alt="Akshay Nair's Portfolio" />
 			</div>
 
 			<!-- Header text info -->
@@ -35,13 +36,13 @@
 	<!-- The banner? I guess? -->
 	<div class="image-wrapper">
 		<picture>
-			<source srcset="img/one.jpg" media="(max-width: 500px)" />
-			<source srcset="img/three.jpg" media="(max-width: 1000px)" />
-			<img class="image-wrapper__img" src="img/center.jpg" />
+			<source srcset="./src/img/one.jpg" media="(max-width: 500px)" />
+			<source srcset="./src/img/three.jpg" media="(max-width: 1000px)" />
+			<img class="image-wrapper__img" src="./src/img/center.jpg" />
 		</picture>
 	</div>
 
-
+	<!-- Work section -->
 	<section class="work">
 
 		<!-- Section title -->
@@ -56,8 +57,8 @@
 
 					<!-- Project image -->
 					<picture>
-						<source srcset="img/one.jpg" type="image/jpeg" />
-						<img class="work__project__img" src="img/one.jpg" />
+						<source srcset="./src/img/one.jpg" type="image/jpeg" />
+						<img class="work__project__img" src="./src/img/one.jpg" />
 					</picture>
 
 					<!-- Project name -->
@@ -71,8 +72,8 @@
 			<article class="work__project col-4">
 				<div class="work__project__wrap">
 					<picture>
-						<source srcset="img/two.png" type="image/jpeg" />
-						<img class="work__project__img" src="img/two.png" />
+						<source srcset="./src/img/three.jpg" type="image/jpeg" />
+						<img class="work__project__img" src="./src/img/three.jpg" />
 					</picture>
 
 					<div class="work__project__name">Memory Game</div>
@@ -83,8 +84,8 @@
 			<article class="work__project col-4">
 				<div class="work__project__wrap">
 					<picture>
-						<source srcset="img/three.jpg" type="image/jpeg" />
-						<img class="work__project__img" src="img/three.jpg" />
+						<source srcset="./src/img/three.jpg" type="image/jpeg" />
+						<img class="work__project__img" src="./src/img/three.jpg" />
 					</picture>
 
 					<div class="work__project__name">OxyRouter</div>

@@ -40,6 +40,8 @@ body {
 /* // Globals end */
 
 
+
+
 /* Header styles starts */
 .header {
 	font-size: 1em;
@@ -124,7 +126,7 @@ body {
 
 .work__project__name {
 	padding-top: .5em;
-	font-size: 1.6em;
+	font-size: 1.4em;
 	text-transform: uppercase;
 }
 

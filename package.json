@@ -1,0 +1,15 @@
+{
+  "name": "fend-project-4",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "__placeholder__"
+  },
+  "author": "Akshay Nair <phenax5@gmail.com>",
+  "license": "Apache-2.0"
+}
