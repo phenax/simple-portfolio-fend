@@ -1,0 +1,156 @@
+
+:root {
+	--color-accent: #02b3e4;
+	--color-dark: #2d3c49;
+	--color-light: #7d97ad;
+
+	font-size: 16px;
+	color: var(--color-dark);
+	font-family: Raleway, Helvetica, sans-serif;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+
+.row {
+	width: 100%;
+	display: flex;
+}
+
+.row:not(.no-collapse) {
+	flex-direction: column;
+}
+
+[class^='col-'] {
+	width: 100%;
+}
+
+@media (min-width: 500px) {
+
+	.header.header {
+		font-size: 1.3em;
+	}
+
+	.row:not(.no-collapse) {
+		flex-direction: row;
+	}
+	.row:not(.no-collapse) .col-1 {
+		width: 8.33%;
+	}
+	.row:not(.no-collapse) .col-2 {
+		width: 16.67%;
+	}
+	.row:not(.no-collapse) .col-3 {
+		width: 25%;
+	}
+	.row:not(.no-collapse) .col-4 {
+		width: 33.33%;
+	}
+	.row:not(.no-collapse) .col-5 {
+		width: 41.67%;
+	}
+	.row:not(.no-collapse) .col-6 {
+		width: 50%;
+	}
+	.row:not(.no-collapse) .col-7 {
+		width: 58.33%;
+	}
+	.row:not(.no-collapse) .col-8 {
+		width: 66.67%;
+	}
+	.row:not(.no-collapse) .col-9 {
+		width: 75%;
+	}
+	.row:not(.no-collapse) .col-10 {
+		width: 83.33%;
+	}
+	.row:not(.no-collapse) .col-11 {
+		width: 91.66%;
+	}
+	.row:not(.no-collapse) .col-12 {
+		width: 100%;
+	}
+}
+
+.container {
+	max-width: 1200px;
+	margin: 2em auto;
+	padding: 1em;
+}
+
+
+
+/* Header styles starts */
+.header {
+	font-size: 1em;
+}
+
+.header__wrapper {
+	padding-bottom: 1em;
+	border-bottom: 3px solid var(--color-light);
+}
+
+.header__logo {
+
+}
+
+.header__head {
+	text-align: right;
+	text-transform: uppercase;
+}
+
+.header__head__name {
+	font-size: 2.3em;
+	font-weight: 100;
+}
+
+.header__head__sub {
+	font-size: 1em;
+	font-weight: 800;
+}
+
+/* Header styles ends */
+
+
+
+/* Center image starts */
+.image-wrapper {
+	padding: 2em 0;
+}
+
+.image-wrapper__img {
+	width: 100%;
+}
+/* Center image ends */
+
+
+/* Projects section styles start */
+
+.work {
+	padding: 1em 0;
+	text-align: center;
+}
+
+.work__title {
+	color: var(--color-light);
+	font-weight: 800;
+	padding: 1em;
+	font-size: 2em;
+}
+
+.work__project {
+	padding: 1em 0;
+	font-size: 1em;
+}
+
+.work__project__img {
+	width: 100%;
+}
+
+.work__project__name {
+	font-size: 2em;
+	text-transform: uppercase;
+}
