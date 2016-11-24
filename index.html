@@ -15,10 +15,10 @@
 
 	<header class='header'>
 		<div class='header__wrapper row'>
-			<div class='header__logo col-4'>
+			<div class='header__logo col-6'>
 				L
 			</div>
-			<div class='header__head col-8'>
+			<div class='header__head col-6'>
 				<div class='header__head__name'>Akshay Nair</div>
 				<div class='header__head__sub'>Front-End Ninja</div>
 			</div>
@@ -28,7 +28,8 @@
 
 	<section class='image-wrapper'>
 		<picture>
-			<source srcset='img/center.jpg' type='image/jpeg' />
+			<source srcset='img/one.jpg' media='(max-width: 500px)' />
+			<source srcset='img/three.jpg' media='(max-width: 1000px)' />
 			<img class='image-wrapper__img' src='img/center.jpg' />
 		</picture>
 	</section>
@@ -39,28 +40,41 @@
 		<div class='work__title'>Featured Work</div>
 
 		<div class='work__wrapper row'>
+			
 			<article class='work__project col-4'>
-				<picture>
-					<source srcset='img/center.jpg' type='image/jpeg' />
-					<img class='work__project__img' src='img/center.jpg' />
-				</picture>
+				<div class='work__project__wrapper'>
+					<picture>
+						<source srcset='img/one.jpg' type='image/jpeg' />
+						<img class='work__project__img' src='img/one.jpg' />
+					</picture>
 
-				<div class='work__project__name'>PlasmaJS</div>
-				<div class='work__project__link'>https://github.com/phenax/plasmajs</div>
+					<div class='work__project__name'>PlasmaJS</div>
+					<div class='work__project__link'>https://github.com/phenax/plasmajs</div>
+				</div>
 			</article>
 
 			<article class='work__project col-4'>
-				<picture>
-					<source srcset='img/center.jpg' type='image/jpeg' />
-					<img class='work__project__img' src='img/center.jpg' />
-				</picture>
+				<div class='work__project__wrapper'>
+					<picture>
+						<source srcset='img/one.jpg' type='image/jpeg' />
+						<img class='work__project__img' src='img/one.jpg' />
+					</picture>
+
+					<div class='work__project__name'>PlasmaJS</div>
+					<div class='work__project__link'>https://github.com/phenax/plasmajs</div>
+				</div>
 			</article>
 
 			<article class='work__project col-4'>
-				<picture>
-					<source srcset='img/center.jpg' type='image/jpeg' />
-					<img class='work__project__img' src='img/center.jpg' />
-				</picture>
+				<div class='work__project__wrapper'>
+					<picture>
+						<source srcset='img/one.jpg' type='image/jpeg' />
+						<img class='work__project__img' src='img/one.jpg' />
+					</picture>
+
+					<div class='work__project__name'>PlasmaJS</div>
+					<div class='work__project__link'>https://github.com/phenax/plasmajs</div>
+				</div>
 			</article>
 		</div>
 	</section>
