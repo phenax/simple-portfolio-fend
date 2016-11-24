@@ -51,22 +51,30 @@ body {
 }
 
 .header__logo {
+	width: 100%;
+	padding: .5em 0;
+	text-align: center;
+}
 
+.header__logo__img {
+	width: 100px;
 }
 
 .header__head {
-	text-align: right;
+	width: 100%;
+	padding-top: 1em;
+	text-align: center;
 	text-transform: uppercase;
 }
 
 .header__head__name {
-	font-size: 2.3em;
+	font-size: 2.5em;
 	font-weight: 100;
 }
 
 .header__head__sub {
 	font-size: 1em;
-	font-weight: 800;
+	font-weight: 500;
 }
 
 /* // Header styles ends */
@@ -104,6 +112,7 @@ body {
 
 .work__project {
 	font-size: 1em;
+	word-wrap: break-word;
 }
 .work__project__wrapper {
 	padding: 1em;
@@ -114,7 +123,7 @@ body {
 }
 
 .work__project__name {
-	font-size: 2em;
+	font-size: 1.6em;
 	text-transform: uppercase;
 }
 
@@ -128,9 +137,9 @@ body {
 
 
 
-
 /* Media queries start */
 
+	/* Desktop breakpoint */
 @media (min-width: 800px) {
 
 	.work {
@@ -142,8 +151,16 @@ body {
 		font-size: 2.8em;
 	}
 
+	.work .work__project__name.work__project__name.work__project__name {
+		font-size: 1.4em;
+	}
+
 	.header.header {
-		font-size: 1.3em;
+		font-size: 1.4em;
+	}
+
+	.header__head.header__head {
+		padding: 0;
 	}
 
 	.row .col-1.col-1 { width: 8.33%; }
@@ -160,13 +177,34 @@ body {
 	.row .col-12.col-12 { width: 100%; }
 }
 
+
+	/* Tablet Breakpoint */
 @media (min-width: 500px) {
 
-	.work {
-		font-size: .8em;
+	body .work__project__name {
+		font-size: 1.4em;
 	}
 	body .work__project:first-child {
 		width: 100%;
+	}
+	body .work__project:first-child .work__project__name {
+		font-size: 2em;
+	}
+
+	.header__logo {
+		width: 30%;
+		text-align: left;
+		padding: 0;
+	}
+
+	.header__logo__img {
+		margin-left: 1em;
+	}
+
+	.header__head {
+		width: 70%;
+		text-align: right;
+		padding-top: 1em;
 	}
 
 	.row.row {
