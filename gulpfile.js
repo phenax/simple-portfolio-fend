@@ -1,6 +1,6 @@
 const gulp= require('gulp');
 
-const imageMin= require('gulp-imagemin');
+const imageOptim= require('gulp-image-optimization');
 const imageResize= require('gulp-image-resize');
 const rename= require('gulp-rename');
 
@@ -30,14 +30,18 @@ const imageList= [
 
 
 function buildImages() {
+
 	imageList.map(
 		image => 
 			image.resize.map(
 				size => gulp
 					.src(`${FILE_DIR}/${image.name}.jpg`)
 					.pipe(imageResize({ width: size }))
-					// .pipe(imageMin())
 					.pipe(rename(`${image.name}.min.${size}.jpg`))
+					.pipe(imageOptim({
+						optimizationLevel: 5,
+						progressive: true,
+					}))
 					.pipe(gulp.dest(BUILD_DIR))
 			)
 	);
