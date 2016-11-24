@@ -11,13 +11,19 @@
 </head>
 <body>
 
+<!-- A container for all the elements -->
 <main class="container">
 
+	<!-- The header element -->
 	<header class="header">
-		<div class="header__wrapper row">
+		<div class="header__wrap row">
+
+			<!-- Logo -->
 			<div class="header__logo">
 				<img class="header__logo__img" src="./img/lgo.png" alt="Akshay Nair's Portfolio" />
 			</div>
+
+			<!-- Header text info -->
 			<div class="header__head">
 				<div class="header__head__name">Akshay&nbsp;Nair</div>
 				<div class="header__head__sub">Front-End Ninja</div>
@@ -26,38 +32,47 @@
 	</header>
 
 
-	<section class="image-wrapper">
+	<!-- The banner? I guess? -->
+	<div class="image-wrapper">
 		<picture>
 			<source srcset="img/one.jpg" media="(max-width: 500px)" />
 			<source srcset="img/three.jpg" media="(max-width: 1000px)" />
 			<img class="image-wrapper__img" src="img/center.jpg" />
 		</picture>
-	</section>
+	</div>
 
 
 	<section class="work">
 
+		<!-- Section title -->
 		<div class="work__title">Featured Work</div>
 
-		<div class="work__wrapper row">
+		<!-- List of all projects -->
+		<div class="work__wrap row">
 			
+			<!-- Each project -->
 			<article class="work__project col-4">
-				<div class="work__project__wrapper">
+				<div class="work__project__wrap">
+
+					<!-- Project image -->
 					<picture>
 						<source srcset="img/one.jpg" type="image/jpeg" />
 						<img class="work__project__img" src="img/one.jpg" />
 					</picture>
 
+					<!-- Project name -->
 					<div class="work__project__name">PlasmaJS</div>
+
+					<!-- Link to the project -->
 					<div class="work__project__link">https://github.com/phenax/plasmajs</div>
 				</div>
 			</article>
 
 			<article class="work__project col-4">
-				<div class="work__project__wrapper">
+				<div class="work__project__wrap">
 					<picture>
-						<source srcset="img/one.jpg" type="image/jpeg" />
-						<img class="work__project__img" src="img/one.jpg" />
+						<source srcset="img/two.png" type="image/jpeg" />
+						<img class="work__project__img" src="img/two.png" />
 					</picture>
 
 					<div class="work__project__name">Memory Game</div>
@@ -66,10 +81,10 @@
 			</article>
 
 			<article class="work__project col-4">
-				<div class="work__project__wrapper">
+				<div class="work__project__wrap">
 					<picture>
-						<source srcset="img/one.jpg" type="image/jpeg" />
-						<img class="work__project__img" src="img/one.jpg" />
+						<source srcset="img/three.jpg" type="image/jpeg" />
+						<img class="work__project__img" src="img/three.jpg" />
 					</picture>
 
 					<div class="work__project__name">OxyRouter</div>

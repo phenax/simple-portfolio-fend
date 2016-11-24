@@ -2,9 +2,9 @@
 /* Globals start */
 
 :root {
-	--color-accent: #02b3e4;
 	--color-dark: #2d3c49;
 	--color-light: #7d97ad;
+	--container-max-width: 1200px;
 
 	font-size: 16px;
 	color: var(--color-dark);
@@ -18,7 +18,7 @@ body {
 }
 
 .container {
-	max-width: 1200px;
+	max-width: var(--container-max-width);
 	margin: 2em auto;
 	padding: 1em;
 }
@@ -45,7 +45,7 @@ body {
 	font-size: 1em;
 }
 
-.header__wrapper {
+.header__wrap {
 	padding-bottom: 1em;
 	border-bottom: 3px solid var(--color-light);
 }
@@ -114,8 +114,8 @@ body {
 	font-size: 1em;
 	word-wrap: break-word;
 }
-.work__project__wrapper {
-	padding: 1em;
+.work__project__wrap {
+	padding: 1.1em;
 }
 
 .work__project__img {
@@ -123,13 +123,12 @@ body {
 }
 
 .work__project__name {
+	padding-top: .5em;
 	font-size: 1.6em;
 	text-transform: uppercase;
 }
 
 /* // Projects section styles end */
-
-
 
 
 
