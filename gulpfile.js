@@ -4,10 +4,20 @@ const imageOptim= require('gulp-image-optimization');
 const imageResize= require('gulp-image-resize');
 const rename= require('gulp-rename');
 
+// TODO: Add tasks for building CSS
 
-const BUILD_DIR= './src/img-min';
-const FILE_DIR= './src/img';
 
+const FILE_DIR= './src/img';         // The source
+const BUILD_DIR= './src/img-min';    // The destination
+
+// Options to pass to gulp-image-optimization
+const optimizationOptions= {
+	optimizationLevel: 5,
+	progressive: true,
+};
+
+
+// All the images to optimize
 const imageList= [
 	{
 		name: 'main',
@@ -28,25 +38,25 @@ const imageList= [
 ];
 
 
+/**
+ * Optimizes all the images
+ */
+function buildImages(images) {
 
-function buildImages() {
-
-	imageList.map(
-		image => 
-			image.resize.map(
-				size => gulp
-					.src(`${FILE_DIR}/${image.name}.jpg`)
-					.pipe(imageResize({ width: size }))
-					.pipe(rename(`${image.name}.min.${size}.jpg`))
-					.pipe(imageOptim({
-						optimizationLevel: 5,
-						progressive: true,
-					}))
-					.pipe(gulp.dest(BUILD_DIR))
-			)
-	);
+	return _ => 
+		images.forEach(
+			image => 
+				image.resize.forEach(
+					size => 
+						gulp
+							.src(`${FILE_DIR}/${image.name}.jpg`)
+							.pipe(imageResize({ width: size }))
+							.pipe(rename(`${image.name}.min.${size}.jpg`))
+							.pipe(imageOptim(optimizationOptions))
+							.pipe(gulp.dest(BUILD_DIR))
+				)
+		);
 }
 
-gulp.task('build:images', buildImages);
-
+gulp.task('build:images', buildImages(imageList));
 gulp.task('default', ['build:images']);

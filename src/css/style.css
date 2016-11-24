@@ -2,6 +2,8 @@
 /* Globals start */
 
 :root {
+
+	/* TODO: Use gulp to polyfill css variable support + minify the file */
 	--color-dark: #2d3c49;
 	--color-light: #7d97ad;
 	--container-max-width: 1200px;
